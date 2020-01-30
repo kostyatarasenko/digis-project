@@ -1,0 +1,69 @@
+@import url("~leaflet/dist/leaflet.css");
+@black: #000;
+@white: #fff;
+
+#root, .leaflet-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.no-pd {
+  padding: 0 !important;
+}
+
+.no-mg-bottom {
+  margin-bottom: 0 !important;
+}
+
+.pd-top-bottom-16 {
+  padding: 16px 0;
+}
+
+.max-width {
+  width: 100%;
+}
+
+i.icon-black {
+  color: @black !important;
+}
+
+#controls-wrapper {
+  margin: 16px 0 16px 16px;
+  color: @black;
+}
+
+.block-button {
+  display: block !important;
+  margin-bottom: 8px;
+}
+
+#wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5000;
+}
+
+#layout-wrapper {
+  width: 400px;
+  background: @white;
+}
+
+#saved-markers-wrapper {
+  padding: 0 16px;
+  margin: 0 auto;
+  max-height: 300px;
+  overflow-x: scroll;
+}
+
+#preloader-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: @white;
+}
