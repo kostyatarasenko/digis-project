@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import {
-    BrowserRouter,
+    BrowserRouter as Router,
     Switch,
     Route,
     Redirect,
@@ -22,7 +22,7 @@ const RouteController = () => {
     });
 
     return (
-        <BrowserRouter>
+        <Router>
             <Navbar showMainLink={store.user.authorized} />
             <Switch>
                 <Route path="/auth">
@@ -38,7 +38,7 @@ const RouteController = () => {
             {
                 !store.user.authorized ? <Redirect to="/auth" /> : <Redirect to="/main" />
             }
-        </BrowserRouter>
+        </Router>
     );
 };
 
