@@ -34,6 +34,8 @@ module.exports = {
         historyApiFallback: true,
     },
 
+    stats: isDev ? 'normal' : 'none',
+
     module: {
         rules: [
             {
